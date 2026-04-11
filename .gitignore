@@ -1,0 +1,39 @@
+# --- Binaries & Executables ---
+main
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+# Your specific tailwind binary
+tailwindcss-linux-x64
+
+# --- Test Artifacts ---
+*.test
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# --- Environment Secrets (CRITICAL) ---
+.env
+.env.*
+!.env.example
+
+# --- Project Specifics ---
+# Ignore temporary editor files
+*~
+*.swp
+# Ignore the actual uploaded files, but keep the folder structure
+uploads/profile_images/*
+!uploads/profile_images/.gitkeep
+
+# --- Dependencies ---
+vendor/
+go.work
+go.work.sum
+
+# --- IDEs ---
+.idea/
+.vscode/
+.DS_Store
