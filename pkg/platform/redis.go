@@ -17,11 +17,11 @@ var RDB *goredis.Client
 var Ctx = context.Background()
 
 func InitRedis() {
-    // 1. Get Host and Port from Docker environment
-    // Defaults to "cache" which is your service name in docker-compose
+    // 1. Get Host and Port from Environment
+    // Changed "cache" to "127.0.0.1" for bare-metal VPS setup
     redisHost := os.Getenv("REDIS_HOST")
     if redisHost == "" {
-        redisHost = "cache"
+        redisHost = "127.0.0.1"
     }
 
     redisPort := os.Getenv("REDIS_PORT")
@@ -32,9 +32,10 @@ func InitRedis() {
     addr := redisHost + ":" + redisPort
 
     // 2. Setup Fiber Storage (For Session/Limiter)
+    // We pass the host and port separately as the Fiber driver expects
     Redis = fstorage.New(fstorage.Config{
         Host: redisHost,
-        Port: 6379,
+        Port: 6379, 
     })
 
     // 3. Setup Raw Go-Redis Client (For custom logic)

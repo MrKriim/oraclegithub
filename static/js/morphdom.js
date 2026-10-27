@@ -1,1 +1,1 @@
-Not found: /htmx.org@2.0.8/dist/ext/morphdom.js
+Package not found: htmx-ext-morphdom

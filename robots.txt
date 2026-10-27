@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Allow: /static/
+Allow: /uploads/
+
+# Block action-heavy and private routes
+Disallow: /mehfil/send/
+Disallow: /mehfil/join/
+Disallow: /mehfil/kick/
+Disallow: /mehfil/toggle-role/
+Disallow: /mehfil/update-fee/
+Disallow: /mehfil/update-topic/
+Disallow: /mehfil/update-rules/
+Disallow: /chat/
+Disallow: /settings/
+Disallow: /login
+Disallow: /signup
+Disallow: /api/
+
+
+Sitemap: https://dostana.biz/sitemap.xml

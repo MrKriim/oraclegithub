@@ -1,0 +1,23 @@
+nohup: ignoring input
+2026/07/26 14:41:53 🌍 Timezone set to Asia/Karachi
+2026/07/26 14:41:53 Current App Time: 26 Jul 2026 02:41 PM
+2026/07/26 14:41:53 🖥️  GOMAXPROCS set to 4
+2026/07/26 14:41:53 ✅ Redis connected at 127.0.0.1:6379
+2026/07/26 14:41:53 ✅ PostgreSQL pool ready
+2026/07/26 14:41:53 WARN  [set default timezone]: ERROR: syntax error at or near "(" (SQLSTATE 42601)
+2026/07/26 14:41:57 ✅ Connected to PostgreSQL and synchronized to Asia/Karachi
+2026/07/26 14:41:57 WARN  [migrate users.points_check]: ERROR: syntax error at or near "NOT" (SQLSTATE 42601)
+2026/07/26 14:41:57 WARN  [migrate users.health_score_check]: ERROR: syntax error at or near "NOT" (SQLSTATE 42601)
+2026/07/26 14:41:57 WARN  [migrate users.happiness_level_check]: ERROR: syntax error at or near "NOT" (SQLSTATE 42601)
+2026/07/26 14:41:57 🧹 Cleanup started at 2026-07-26 14:41:57 PKT
+2026/07/26 14:41:58 🧹 Cleanup done — 0 total rows removed
+2026/07/26 14:41:58 🕒 Next cleanup in 12h18m0s
+2026/07/26 14:41:58 ✅ DP Competition schema ready
+2026/07/26 14:41:58 DP Competition worker started (checks every 5 min)
+2026/07/26 14:41:58 ✅ Database tables, indexes, migrations, and cleanup jobs initialized!
+2026/07/26 14:41:58 ✅ Redis connected. Redis memory: 2.72M
+2026/07/26 14:41:58 Trending worker started (7-day weekly window, resets every Sunday PKT)
+2026/07/26 14:41:58 ✅ DP Competition schema ready
+2026/07/26 14:41:58 DP Competition worker started (checks every 5 min)
+2026/07/26 14:41:58 🚀 Server starting on :3000
+2026/07/26 14:41:58 failed to listen: listen tcp4 :3000: bind: address already in use
