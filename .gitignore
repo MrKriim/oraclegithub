@@ -1,4 +1,3 @@
-# --- Binaries & Executables ---
 main
 *.exe
 *.exe~
@@ -24,9 +23,6 @@ profile.cov
 # Ignore temporary editor files
 *~
 *.swp
-# Ignore the actual uploaded files, but keep the folder structure
-uploads/profile_images/*
-!uploads/profile_images/.gitkeep
 
 # --- Dependencies ---
 vendor/
@@ -37,5 +33,11 @@ go.work.sum
 .idea/
 .vscode/
 .DS_Store
-# Uploads directory (ignore folder and all contents)
+
+# --- Uploads & Media (Keep structure, ignore contents) ---
 uploads/
+!uploads/
+uploads/profile_images/
+!uploads/profile_images/
+uploads/profile_images/*
+!uploads/profile_images/.gitkeep
