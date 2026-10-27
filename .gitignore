@@ -4,40 +4,30 @@ main
 *.dll
 *.so
 *.dylib
-# Your specific tailwind binary
 tailwindcss-linux-x64
 
-# --- Test Artifacts ---
 *.test
 *.out
 coverage.*
 *.coverprofile
 profile.cov
 
-# --- Environment Secrets (CRITICAL) ---
 .env
 .env.*
 !.env.example
 
-# --- Project Specifics ---
-# Ignore temporary editor files
 *~
 *.swp
 
-# --- Dependencies ---
 vendor/
 go.work
 go.work.sum
 
-# --- IDEs ---
 .idea/
 .vscode/
 .DS_Store
 
-# --- Uploads & Media (Keep structure, ignore contents) ---
-uploads/
-!uploads/
-uploads/profile_images/
-!uploads/profile_images/
-uploads/profile_images/*
-!uploads/profile_images/.gitkeep
+# Ignore all files inside uploads and any subdirectories, but keep directory structures via .gitkeep
+uploads/**
+!uploads/**/
+!uploads/**/.gitkeep
